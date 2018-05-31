@@ -7,7 +7,7 @@ This code is the base of an app called FortStats, a stats tracker for the Fortni
 
 The app uses MVP architecture to organize the code and to allow better testability, Dagger2 to dependency injection and Retrofit to make calls to the API used to get user stats.
 
-## How to make it works?
+## How to make it work?
 Firstly, after oppening the code in your Android Studio you will have to create a class called ConfigUtils and add two static fields:
 + APPLICATION_ID
 + API_URL
