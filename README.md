@@ -1,12 +1,13 @@
 # FortStats - Code Base
 This code is the base of an app called FortStats, a stats tracker for the Fortnite game by Epic Games.
 
-![image1](http://i1320.photobucket.com/albums/u540/ROFactum/ad587c96-5b6f-429f-8b39-33dfecf06abb_zpscxuppxup.jpg)
-![image2](http://i1320.photobucket.com/albums/u540/ROFactum/afecfac8-31bc-4bc5-a184-d965fad1b37e_zpsc8nxnrhs.jpg)
+
+<img src="http://i1320.photobucket.com/albums/u540/ROFactum/ad587c96-5b6f-429f-8b39-33dfecf06abb_zpscxuppxup.jpg" width="300" height="533">                      <img src="http://i1320.photobucket.com/albums/u540/ROFactum/afecfac8-31bc-4bc5-a184-d965fad1b37e_zpsc8nxnrhs.jpg" width="300" height="533">
+
 
 The app uses MVP architecture to organize the code and to allow better testability, Dagger2 to dependency injection and Retrofit to make calls to the API used to get user stats.
 
-# How to make it works?
+## How to make it works?
 Firstly, after oppening the code in your Android Studio you will have to create a class called ConfigUtils and add two static fields:
 + APPLICATION_ID
 + API_URL
@@ -30,20 +31,20 @@ Call<Player> getPlayerStats(@Path("user") String user);
 ```
 to 
 
-```
+```Java
 @GET("yourPlatform/{user}")  
 Call<Player> getPlayerStats(@Path("user") String user);
 ```
  
  The available platforms by the API are: *pc*, *psn* and *xb1*.
 
-# API Dependencies
+## API Dependencies
 The API used to get info from users is the [FortniteTracker](https://fortnitetracker.com).
 
-# Right of use
+## Right of use
 You are free to use this base code to build your own app. If your app has an open source code, please refer this page.
 
-# Copyrights
+## Copyrights
 All rights of the *Fortnite* game are reserved to __Epic Games__, this app does not have any relation with the company.
 
 All API rights are reserved to __FortniteTracker__, this app does not have any relation with the API creators.
