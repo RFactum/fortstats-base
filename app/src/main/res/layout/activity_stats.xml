@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/text_input_layout"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        app:errorEnabled="true">
+
+        <EditText
+            android:id="@+id/edt_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="19sp"
+            android:hint="@string/stats_username_hint"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/btn_stats_search"
+        android:layout_width="0dp"
+        android:layout_weight="0.4"
+        android:text="Search"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="15dp"
+        android:textSize="13sp"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@color/colorPrimary"
+        />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/stats_waiting"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/stats_watiing_username"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:visibility="visible"/>
+
+    <ProgressBar
+        android:id="@+id/stats_progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:theme="@style/ProgressBarTheme"
+        android:visibility="invisible"
+        />
+
+    <LinearLayout
+        android:id="@+id/ll_stats_show"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="invisible">
+
+    <TextView
+        android:id="@+id/stats_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Username "
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:layout_margin="15dp"/>
+
+    <TextView
+        android:id="@+id/stats_kills"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="Total Kills: "
+        android:layout_margin="15dp"/>
+
+    <TextView
+        android:id="@+id/stats_wins"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Wins: "
+        android:textSize="15sp"
+        android:layout_margin="15dp"/>
+
+    <TextView
+        android:id="@+id/stats_games"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Matches: "
+        android:textSize="15sp"
+        android:layout_margin="15dp"/>
+
+    <TextView
+        android:id="@+id/stats_kd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Kills: "
+        android:textSize="15sp"
+        android:layout_margin="15dp"/>
+    </LinearLayout>
+
+</LinearLayout>
